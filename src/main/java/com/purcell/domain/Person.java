@@ -13,7 +13,7 @@ import java.util.List;
 
 
 @Data
-@EqualsAndHashCode(exclude = { "children" })
+@EqualsAndHashCode(exclude = { "children", "ttl" })
 @RedisHash("hperson")
 @NoArgsConstructor
 public class Person {
